@@ -195,19 +195,20 @@ p, .advanced-description{
     margin: 50px 240px;
  }
  .service-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 26px;
     width: 600px;
     height: 400px;
-    background: url(../images/1.jpg);
-    background-repeat: no-repeat;
-    margin: auto;
-    animation: slide 20s infinite ;
+    margin: 20px 180px 180px;
+    gap: 20px;
  }
  
  .service-title, .sponsor-title{
     font-weight: 700;
     font-size: 45px;
  }
- .service-info, .sponsor-info{
+.sponsor-info{
     padding: 24px 0 50px 0;
     font-weight: 400;
     font-size: 16px;
@@ -227,12 +228,18 @@ p, .advanced-description{
     margin-bottom: 120px;
     filter: grayscale(1);
  }
+
+ .service-info{
+    margin-bottom: 10px;
+    padding: 10px;
+ }
  /* ----------------------------------
          footer styles 
  ------------------------------------ */
  .copyright{
     padding: 40px 0;
-    margin: 100px;
+    margin-bottom:100px;
+    margin-left: 100px;
     text-align: center;
     background: #FFF4E7;
     font-weight: 400;
@@ -249,15 +256,12 @@ p, .advanced-description{
         font-size: 25px;
     }
     .logo, .banner-info, .nav-bar{
-        margin-left: 20px;
-    }
+        margin: 20px;
+    }        
     .banner-title{
         font-size: 32px;
         padding: 0 ;
-    }
-    .banner-description{
-        margin-right: 5px;
-    }
+    }      
     .btn-primary{
         font-size: 15px;
         padding: 10px;
@@ -267,21 +271,25 @@ p, .advanced-description{
         width: 100%;
         height: 100%;
         margin: 0;
-        align-items: center;
+       justify-items: center;
+      }
+      .attractive{
+        margin-top: 20px;
       }
 .advanced-title, .advanced-description, .feature-title{
     margin-left: 20px;
 }
-.feature-img{
+.feature-img, .service-img{
         grid-template-columns: repeat(1, 1fr);
         margin-top: 10px;
+        justify-items: center;
  }
  .feature-info, .feature-second-container, .can{
     margin: 10px ;
  }
  .feature-special img{
-    width: 100%;
-    height: 100%;
+    width:300px;
+    height: 500px;
     margin:0;
  }
  .feature-special{
@@ -300,17 +308,42 @@ p, .advanced-description{
     font-weight: 500;
     font-size: 18px
 }
+.fact-container{
+    margin:10px
+ }
+.fact-title{
+    color: #131313;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0;}
+.fact-info{    
+    font-weight: 400;
+    font-size: 16px;
+    width: 300px;
+}
 .fact-container, .service, .sponsor{
     margin: 0;
-    align-items: center;
+    justify-items: center;
     padding-left: 20px;
 }
 .sponsors-img{
-    width:300px;
+    width:200px;
     height: 100px;
     row-gap: 50px;
-    padding-left: 150px;
+   justify-items: center;
 }
+.service{
+    margin-top: 600px;
+    margin-bottom: 700px;
+    align-items: center;
+    justify-content: center;
+    }
+}
+.service-img{
+    margin-left: 0;
+    width:300px;
+    height: 100px;
+    }
 .copyright{
     padding: 40px 0;
     text-align: center;
