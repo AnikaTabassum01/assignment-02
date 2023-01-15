@@ -1,8 +1,14 @@
+/* common style */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+/* font style */
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+/* header */
 header{
     background: rgba(255, 144, 14, 0.1);
 }
@@ -27,6 +33,7 @@ ul{
     margin-top: 80px;
     margin-right: 220px;
 }
+/* banner style */
 .banner{
     text-align: center;
 }
@@ -78,6 +85,7 @@ ul{
     padding-top:24px;
     padding-bottom: 32px;
 }
+/* feature second container */
 .feature-second-container, .feature-container{
     display:flex
 }
@@ -118,12 +126,14 @@ p, .advanced-description{
     border: 2px solid gainsboro;
 }
 .feature-special img{
-    margin: 0 0 77px 90px;
+    margin: 0 0 -130px 90px;
 } 
 .feature-special .btn-special{
     width: 342px;
     height: 200px;
     position: relative;
+    margin-top:;
+    margin-left: 0px;
 }
 .btn-special{
     color: #ffffff;
@@ -140,7 +150,7 @@ p, .advanced-description{
 }
 
 
-/* some part */
+/* some portion */
 
 .fact-container{
     margin: 100px 240px;
@@ -158,6 +168,7 @@ p, .advanced-description{
     color: #727272;
     margin-bottom: 100px;
  }
+ /* box container */
  .can-container{
     display: flex;
     justify-content: space-around;
@@ -189,21 +200,13 @@ p, .advanced-description{
     font-size: 20px;
     color: #727272;
  }
- /* our services */
- .service{
+  
+ /* Our Sponsors */
+ .sponsor{
+    justify-content: center;
     text-align: center;
-    margin: 50px 240px;
+    margin: 0 240px;
  }
- .service-img{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 26px;
-    width: 600px;
-    height: 400px;
-    margin: 20px 180px 180px;
-    gap: 20px;
- }
- 
  .service-title, .sponsor-title{
     font-weight: 700;
     font-size: 45px;
@@ -212,23 +215,27 @@ p, .advanced-description{
     padding: 24px 0 50px 0;
     font-weight: 400;
     font-size: 16px;
- }
-
- /* -----------------------------
-        Our Sponspors 
- ------------------------------ */
- .sponsor{
-    justify-content: center;
-    text-align: center;
-    margin: 0 240px;
- }
+}
  .sponsors-img{
     display: flex;
     justify-content: space-between;
     margin-bottom: 120px;
     filter: grayscale(1);
  }
-
+ /* our services */
+ .service{
+    text-align: center;
+    margin: 50px 400px;
+ }
+ .service-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 26px;
+    justify-items: center;
+    width: 600px;
+    height: 400px;
+    gap: 20px;
+ }
  .service-info{
     margin-bottom: 10px;
     padding: 10px;
@@ -238,12 +245,13 @@ p, .advanced-description{
  ------------------------------------ */
  .copyright{
     padding: 40px 0;
-    margin-bottom:100px;
-    margin-left: 100px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-left: 120px;
     text-align: center;
     background: #FFF4E7;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 20px; 
     width: 1440px;
     height: 100px;
  }
@@ -327,29 +335,28 @@ p, .advanced-description{
     padding-left: 20px;
 }
 .sponsors-img{
-    width:200px;
-    height: 100px;
+    width:300px;
+    height: 200px;
     row-gap: 50px;
    justify-items: center;
 }
 .service{
     margin-top: 600px;
-    margin-bottom: 700px;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 500px;
+       
     }
-}
-.service-img{
+.services .service-img img{
     margin-left: 0;
+    padding-left: 0;
     width:300px;
-    height: 100px;
-    }
+    height: 200px;
+}    
 .copyright{
     padding: 40px 0;
     text-align: center;
     width: 300px;
     height: 100px;
-    margin-top: 350px;
-    padding: 10px;
-}
+   }
  }
+
+ 
